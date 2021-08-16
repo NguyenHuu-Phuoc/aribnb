@@ -21,7 +21,7 @@
 		<header class="header">
 			<div class="grid">
 				<nav class="header__navbar">
-	
+
 					<div class="navbar__logo">
 						<a href="" class="navbar__logo-link">
 							<svg width="102" height="32" fill="currentcolor" style="display:block">
@@ -31,7 +31,7 @@
 							</svg>
 						</a>
 					</div>
-	
+
 					<ul class="navbar__list">
 						<li class="navbar__list-item navbar__list-item--active">
 							<a href="" class="navbar__list-item-link">Nơi ở</a>
@@ -43,7 +43,7 @@
 							<a href="" class="navbar__list-item-link">Trải nghiệm trực tuyến</a>
 						</li>
 					</ul>
-	
+
 					<ul class="navbar__list-right">
 						<li class="navbar__list-right-item">
 							<a href="" class="navbar__list-right-item-link">Trở thành chủ nhà</a>
@@ -80,9 +80,9 @@
 						</li>
 					</ul>
 				</nav>
-	
-				<div class="search__header">
-					<form action="" method="get" class="search-header__form">
+
+				<div class="header__search">
+					<form action="" method="get" class="header-search__form">
 						<div class="search-form__group form__group-size--s">
 							<label for="" class="search-form__title">Địa điểm</label>
 							<input type="text" class="search-form__input" placeholder="Bạn sắp đi đâu?">
@@ -105,18 +105,125 @@
 								<i class="ti-search"></i>
 							</button>
 						</div>
-					
+
 					</form>
 
 				</div>
-				<div class="header__content"></div>
+
+				<div class="header__content">
+					<div class="header__content-wrap">
+						<p class="header__content-text">Bạn chưa biết nên đi đâu?Tuyệt!</p>
+						<a href="" class="btn header__content-btn">
+							<span class="header__content-btn-text">
+								Tìm kiếm linh hoạt
+							</span>
+						</a>
+					</div>
+				</div>
 			</div>
 
 		</header>
 
 		<!-- App Container -->
 		<div class="app_container">
+			<div class="grid">
+				<div class="recent__places">
+					<h2 class="app-container__title">Khám phá những điểm đến gần đây</h2>
+					<div class="recent__places-wrap">
+						<div class="grid-row recent__places-list">
+							<a href="" class="grid__column-3 recent__places-item">
+								<img src="./assets/img/recent_places/hcm.webp" alt="" class="recent__places-item-img">
+								<div class="recent__places-item-content">
+									<h4 class="recent__places-item-name">Thành phố Hồ Chí Minh</h4>
+									<p class="recent__places-item-time">15 phút lái xe</p>
+								</div>
+							</a>
+							<a href="" class="grid__column-3 recent__places-item">
+								<img src="./assets/img/recent_places/nhatrang.webp" alt=""
+									class="recent__places-item-img">
+								<div class="recent__places-item-content">
+									<h4 class="recent__places-item-name">Nha Trang</h4>
+									<p class="recent__places-item-time">6,5 giờ lái xe</p>
+								</div>
+							</a>
+							<a href="" class="grid__column-3 recent__places-item">
+								<img src="./assets/img/recent_places/vungtau.webp" alt=""
+									class="recent__places-item-img">
+								<div class="recent__places-item-content">
+									<h4 class="recent__places-item-name">Vũng Tàu</h4>
+									<p class="recent__places-item-time">2 giờ lái xe</p>
+								</div>
+							</a>
+							<a href="" class="grid__column-3 recent__places-item">
+								<img src="./assets/img/recent_places/phuquoc.webp" alt=""
+									class="recent__places-item-img">
+								<div class="recent__places-item-content">
+									<h4 class="recent__places-item-name">Phú Quốc</h4>
+								</div>
+							</a>
+						</div>
+						<div class="grid-row recent__places-list">
+							<a href="" class="grid__column-3 recent__places-item">
+								<img src="./assets/img/recent_places/cantho.webp" alt=""
+									class="recent__places-item-img">
+								<div class="recent__places-item-content">
+									<h4 class="recent__places-item-name">Cần Thơ</h4>
+									<p class="recent__places-item-time">3 giờ lái xe</p>
+								</div>
+							</a>
+							<a href="" class="grid__column-3 recent__places-item">
+								<img src="./assets/img/recent_places/tuyhoa.jpg" alt="" class="recent__places-item-img">
+								<div class="recent__places-item-content">
+									<h4 class="recent__places-item-name">Thành phố Tuy Hòa</h4>
+									<p class="recent__places-item-time">7,5 giờ lái xe</p>
+								</div>
+							</a>
+							<a href="" class="grid__column-3 recent__places-item">
+								<img src="./assets/img/recent_places/bienhoa.webp" alt=""
+									class="recent__places-item-img">
+								<div class="recent__places-item-content">
+									<h4 class="recent__places-item-name">Thành phố Bien Hòa</h4>
+									<p class="recent__places-item-time">45 phút lái xe</p>
+								</div>
+							</a>
+							<a href="" class="grid__column-3 recent__places-item">
+								<img src="./assets/img/recent_places/thuanan.webp" alt=""
+									class="recent__places-item-img">
+								<div class="recent__places-item-content">
+									<h4 class="recent__places-item-name">Thuận An</h4>
+									<p class="recent__places-item-time">30 phút lái xe</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
 
+				<div class="wherever__places">
+					<h2 class="app-container__title">Ở bất cứ nơi đâu</h2>
+					<div class="grid-row wherever__places-list">
+						<a href="" class="grid__column-3 wherever__places-list-item">
+							<img src="./assets/img/wherever__places/ngoai_troi.webp" alt=""
+								class="wherever__places-item-img">
+							<span class="wherever__places-item-title">Nơi nghĩ dưỡng ngoài trời</span>
+						</a>
+						<a href="" class="grid__column-3 wherever__places-list-item">
+							<img src="./assets/img/wherever__places/noi_o_doc_dao.webp" alt=""
+								class="wherever__places-item-img">
+							<span class="wherever__places-item-title">Chỗ ở độc đáo</span>
+						</a>
+						<a href="" class="grid__column-3 wherever__places-list-item">
+							<img src="./assets/img/wherever__places/toan_bo_nha.webp" alt=""
+								class="wherever__places-item-img">
+							<span class="wherever__places-item-title">Toàn bộ nhà</span>
+						</a>
+						<a href="" class="grid__column-3 wherever__places-list-item">
+							<img src="./assets/img/wherever__places/nha_cho_mang_thu_cung.webp" alt=""
+								class="wherever__places-item-img">
+							<span class="wherever__places-item-title">Cho phép mang theo thú cưng</span>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<!-- Footer -->
