@@ -384,3 +384,235 @@
     font-weight: 500;
     margin-top: 10px;
 }
+
+/* Receive guests */
+.receive__guests {
+    margin-top: 70px;
+    min-height: 402px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+}
+
+.receive__guests-content {
+    width: 366px;
+    height: 248px;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.receive__guests-title {
+    font-size: 5rem;
+    color: var(--white-color);
+    font-weight: 500;
+    line-height: 4.6rem;
+    margin-bottom: 20px;
+}
+
+.receive__guests-description {
+    font-size: 1.8rem;
+    color: var(--white-color);
+    line-height: 2.2rem;
+}
+
+.receive__guests-btn {
+    background-color: var(--white-color);
+    padding: 16px 24px;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+/* Explore experience */
+.explore__experience {
+    margin: 60px 0;
+}
+
+.explore__experience-description {
+    font-size: 2.8rem;
+    color: var(--text-color);
+    font-weight: 400;
+    margin: 0;
+}
+
+.explore__experience-list {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.explore__experience-item {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.explore__experience-item-outstanding {
+    width: 52px;
+    height: 22px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-color: var(--white-color);
+    border-radius: 8px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore__experience-item-img {
+    width: 368px;
+    height: 330px;
+    border-radius: 6px;
+
+}
+
+.explore__experience-item-content {
+    margin-top: 10px;
+}
+
+.explore__experience-item-title {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin: 0;
+}
+
+.explore__experience-item-description {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+/* Footer */
+.footer {
+    background-color: #F7F7F7;
+}
+
+/* Footer content */
+.footer__content {
+    padding-top: 28px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.footer__content-title {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer__content-list {
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+}
+
+.footer__content-item {
+    padding: 10px 0;
+}
+
+.footer__content-item-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.footer__content-item-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer copyright*/
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.footer-bottom__copyright-list {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+}
+
+.footer-bottom__copyright-item {
+    margin-right: 18px;
+    font-size: 1.4rem;
+}
+
+.copyright__item-link {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.copyright__item-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer language & money */
+.footer-bottom__language-money-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom__language-money-list {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom__language-money-item {
+    margin-right: 20px
+}
+
+.language-money__item-link {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.language-money__item-icon {
+    margin-right: 8px;
+    font-size: 1.4rem;
+}
+
+/* Footer social */
+.footer-bottom__social-list {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.footer-bottom__language-social-item {
+    margin-right: 20px;
+}
+
+.language-social__item-link {
+    text-decoration: none;
+    padding: 6px;
+}
+
+.language-social__item-icon {
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
