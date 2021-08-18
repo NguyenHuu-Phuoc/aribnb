@@ -1,7 +1,6 @@
 /* Header */
 .header {
     min-height: 550px;
-    background-image: url('/assets/img/header_img.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -95,6 +94,8 @@
     display: block;
     padding: 10px 16px;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .navbar__list-right-item-link:hover {
@@ -124,13 +125,21 @@
 }
 
 .navbar__menu-user .navbar__list-right-item-link {
-    padding: 10px 8px;
+    padding: 4px 8px;
 }
 
-.navbar__list-right-item-icon {
-    color: #666;
-    padding: 0 4px;
+.list-right__item-icon-menu{
+     height: 16px;
+     width: 16px;
+     margin-left:6px
 }
+
+.list-right__item-icon-user{
+    height: 30px;
+    width: 30px;
+    margin-left:8px
+}
+
 
 .navbar__list-menu-user {
     position: absolute;
@@ -143,6 +152,7 @@
     padding: 10px 0;
     overflow: hidden;
     display: none;
+    z-index: 1;
 }
 
 .menu__user-item--cross {
