@@ -63,3 +63,30 @@ html {
     color: var(--text-color);
     font-weight: 600;
 }
+
+/* Modal */
+.modal{
+    position: fixed;
+    left: 0;
+    top:0;
+    right: 0;
+    bottom:0;
+    display: flex;
+}
+
+.modal__overlay{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.modal__body{
+    position:relative;
+    margin:auto;
+    width:560px;
+    height:560px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    z-index: 1;
+}
