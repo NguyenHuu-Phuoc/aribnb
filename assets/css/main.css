@@ -110,9 +110,9 @@
     position: relative;
 }
 
-.navbar__menu-user:hover .navbar__list-menu-user {
+/* .navbar__menu-user:hover .navbar__list-menu-user {
     display: block;
-}
+} */
 
 .navbar__menu-user::after {
     content: "";
@@ -153,6 +153,20 @@
     overflow: hidden;
     display: none;
     z-index: 1;
+}
+
+.list-menu-user--open{
+    display: block;
+} 
+
+.overlay__menu-user{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    width: 100%;
 }
 
 .menu__user-item--cross {

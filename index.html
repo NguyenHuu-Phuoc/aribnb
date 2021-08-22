@@ -59,7 +59,7 @@
 							</a>
 						</li>
 
-						<li class="navbar__list-right-item navbar__menu-user">
+						<li class="navbar__list-right-item navbar__menu-user js-menu-user">
 							<a href="" class="navbar__list-right-item-link">
 								<div class="list-right__item-icon-menu">
 									<svg viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false"
@@ -82,7 +82,8 @@
 								</div>
 							</a>
 
-							<ul class="navbar__list-menu-user">
+							<div class="overlay__menu-user"></div>
+							<ul class="navbar__list-menu-user js-list-menu-user">
 								<li class="menu__user-item">
 									<a href="" class="js_show_modal menu__user-item-link">Đăng ký</a>
 								</li>
@@ -854,16 +855,20 @@
 </body>
 
 <script type="text/javascript">
-	// document.getElementById('js_click_menu_user').addEventListener('click', function (e) {
-	// 	e.preventDefault();
-	// 	var menuUser = document.getElementById('list_menu_user');
-	// 	var displayMenuUser = menuUser.style.display;
-	// 	if (displayMenuUser == 'block') {
-	// 		menuUser.style.display = 'none';
-	// 	} else {
-	// 		menuUser.style.display = 'block';
-	// 	}
-	// })
+	const btnUser = document.querySelector('.js-menu-user');
+	const listMenuUser = document.querySelector('.js-list-menu-user');
+
+	// Lắng nghe sử kiện click menu user
+	btnUser.addEventListener('click', function (e) {
+		e.preventDefault();
+		let checkMenuUser = listMenuUser.classList.contains('list-menu-user--open');
+		if (!checkMenuUser) {
+			listMenuUser.classList.add('list-menu-user--open')
+		} else {
+			listMenuUser.classList.remove('list-menu-user--open')
+		}
+	})
+
 
 	const modal = document.querySelector('.js-modal');
 	const modalContainer = document.querySelector('.js-modal-container');
@@ -888,9 +893,9 @@
 	// Lắng nghe hành vi click vào nút close modal
 	document.getElementById('js_btn-close-modal').addEventListener('click', closeModal);
 
-	modal.addEventListener('click',closeModal);
+	modal.addEventListener('click', closeModal);
 
-	modalContainer.addEventListener('click',function(e){
+	modalContainer.addEventListener('click', function (e) {
 		e.stopPropagation();
 	})
 
@@ -898,7 +903,6 @@
 	document.getElementById('js_auth-form_tetlephone').addEventListener('click', function (e) {
 		this.classList.add('auth-form__telephone--active');
 	})
-
 </script>
 
 </html>
