@@ -487,13 +487,20 @@
 		<div class="modal__overlay"></div>
 		<div class="modal__body">
 			<div class="auth-form__heading">
-				<i class="ti-close btn-close-modal"></i>
+				<buton class="btn-close-modal">
+					<svg viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false"
+						style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+						<path d="m6 6 20 20"></path>
+						<path d="m26 6-20 20"></path>
+					</svg>
+				</buton>
 				<h3 class="auth-form__heading-title">Đăng nhập hoặc đăng ký</h3>
 			</div>
 
 			<div class="auth-form__body">
 				<h3 class="auth-form__body-title">Chào mừng bạn đến với Aribnb</h3>
-				<div class="auth-form__group">
+
+				<!-- <div class="auth-form__group">
 					<select class="auth-form__region-list auth-form-select">
 						<option class="auth-form__region-item">Việt Nam (+84)</option>
 						<option class="auth-form__region-item">Thụy Sĩ (+41)</option>
@@ -502,7 +509,260 @@
 				</div>
 				<div class="auth-form__group">
 					<input type="text" class="auth-form-input auth-form__telephone" placeholder="Số điện thoại">
+				</div> -->
+
+				<div class="auth-form__body-content">
+					<div class="auth-form__content-region">
+						<label for="region_list" class="auth-form__content-region-title">Quốc gia/ Khu vực</label>
+						<select name="region_list" id="" class="auth-form__content-region-list">
+							<option value="966SA">Ả Rập Xê-út (+966)</option>
+							<option value="93AF">Afghanistan (+93)</option>
+							<option value="20EG">Ai Cập (+20)</option>
+							<option value="355AL">Albania (+355)</option>
+							<option value="213DZ">Algeria (+213)</option>
+							<option value="376AD">Andorra (+376)</option>
+							<option value="244AO">Angola (+244)</option>
+							<option value="1AI">Anguilla (+1)</option>
+							<option value="1AG">Antigua và Barbuda (+1)</option>
+							<option value="43AT">Áo (+43)</option>
+							<option value="54AR">Argentina (+54)</option>
+							<option value="374AM">Armenia (+374)</option>
+							<option value="297AW">Aruba (+297)</option>
+							<option value="61AU">Australia (+61)</option>
+							<option value="994AZ">Azerbaijan (+994)</option>
+							<option value="91IN">Ấn Độ (+91)</option>
+							<option value="48PL">Ba Lan (+48)</option>
+							<option value="1BS">Bahamas (+1)</option>
+							<option value="973BH">Bahrain (+973)</option>
+							<option value="880BD">Bangladesh (+880)</option>
+							<option value="1BB">Barbados (+1)</option>
+							<option value="375BY">Belarus (+375)</option>
+							<option value="501BZ">Belize (+501)</option>
+							<option value="229BJ">Benin (+229)</option>
+							<option value="1BM">Bermuda (+1)</option>
+							<option value="975BT">Bhutan (+975)</option>
+							<option value="32BE">Bỉ (+32)</option>
+							<option value="591BO">Bolivia (+591)</option>
+							<option value="599BQ">Bonaire, Sint Eustatius và Saba (+599)</option>
+							<option value="387BA">Bosnia và Herzegovina (+387)</option>
+							<option value="267BW">Botswana (+267)</option>
+							<option value="351PT">Bồ Đào Nha (+351)</option>
+							<option value="55BR">Brazil (+55)</option>
+							<option value="673BN">Brunei (+673)</option>
+							<option value="359BG">Bulgaria (+359)</option>
+							<option value="226BF">Burkina Faso (+226)</option>
+							<option value="257BI">Burundi (+257)</option>
+							<option value="971AE">Các Tiểu Vương quốc Ả Rập Thống nhất (+971)</option>
+							<option value="237CM">Cameroon (+237)</option>
+							<option value="855KH">Campuchia (+855)</option>
+							<option value="1CA">Canada (+1)</option>
+							<option value="238CV">Cape Verde (+238)</option>
+							<option value="235TD">Chad (+235)</option>
+							<option value="56CL">Chile (+56)</option>
+							<option value="57CO">Colombia (+57)</option>
+							<option value="269KM">Comoros (+269)</option>
+							<option value="242CG">Congo (+242)</option>
+							<option value="506CR">Costa Rica (+506)</option>
+							<option value="1DO">Cộng hòa Dominica (+1)</option>
+							<option value="236CF">Cộng hòa Trung Phi (+236)</option>
+							<option value="225CI">Côte d’Ivoire (+225)</option>
+							<option value="385HR">Croatia (+385)</option>
+							<option value="53CU">Cuba (+53)</option>
+							<option value="599CW">Curaçao (+599)</option>
+							<option value="243CD">Democratic Republic of the Congo (+243)</option>
+							<option value="253DJ">Djibouti (+253)</option>
+							<option value="1DM">Dominica (+1)</option>
+							<option value="45DK">Đan Mạch (+45)</option>
+							<option value="61CX">Đảo Giáng Sinh (+61)</option>
+							<option value="44IM">Đảo Man (+44)</option>
+							<option value="672NF">Đảo Norfolk (+672)</option>
+							<option value="49DE">Đức (+49)</option>
+							<option value="593EC">Ecuador (+593)</option>
+							<option value="503SV">El Salvador (+503)</option>
+							<option value="291ER">Eritrea (+291)</option>
+							<option value="372EE">Estonia (+372)</option>
+							<option value="251ET">Ethiopia (+251)</option>
+							<option value="679FJ">Fiji (+679)</option>
+							<option value="241GA">Gabon (+241)</option>
+							<option value="220GM">Gambia (+220)</option>
+							<option value="995GE">Georgia (+995)</option>
+							<option value="233GH">Ghana (+233)</option>
+							<option value="350GI">Gibraltar (+350)</option>
+							<option value="299GL">Greenland (+299)</option>
+							<option value="1GD">Grenada (+1)</option>
+							<option value="590GP">Guadeloupe (+590)</option>
+							<option value="1GU">Guam (+1)</option>
+							<option value="502GT">Guatemala (+502)</option>
+							<option value="44GG">Guernsey (+44)</option>
+							<option value="594GF">Guiana thuộc Pháp (+594)</option>
+							<option value="224GN">Guinea (+224)</option>
+							<option value="240GQ">Guinea Xích Đạo (+240)</option>
+							<option value="245GW">Guinea-Bissau (+245)</option>
+							<option value="592GY">Guyana (+592)</option>
+							<option value="31NL">Hà Lan (+31)</option>
+							<option value="509HT">Haiti (+509)</option>
+							<option value="82KR">Hàn Quốc (+82)</option>
+							<option value="1US">Hoa Kỳ (+1)</option>
+							<option value="504HN">Honduras (+504)</option>
+							<option value="852HK">Hồng Kông (+852)</option>
+							<option value="36HU">Hungary (+36)</option>
+							<option value="30GR">Hy Lạp (+30)</option>
+							<option value="354IS">Iceland (+354)</option>
+							<option value="62ID">Indonesia (+62)</option>
+							<option value="964IQ">Iraq (+964)</option>
+							<option value="353IE">Ireland (+353)</option>
+							<option value="972IL">Israel (+972)</option>
+							<option value="39IT">Italy (+39)</option>
+							<option value="1JM">Jamaica (+1)</option>
+							<option value="44JE">Jersey (+44)</option>
+							<option value="962JO">Jordan (+962)</option>
+							<option value="7KZ">Kazakhstan (+7)</option>
+							<option value="254KE">Kenya (+254)</option>
+							<option value="686KI">Kiribati (+686)</option>
+							<option value="383XK">Kosovo (+383)</option>
+							<option value="965KW">Kuwait (+965)</option>
+							<option value="996KG">Kyrgyzstan (+996)</option>
+							<option value="246IO">Lãnh thổ Ấn Độ Dương thuộc Anh (+246)</option>
+							<option value="970PS">Lãnh thổ Palestine (+970)</option>
+							<option value="856LA">Lào (+856)</option>
+							<option value="371LV">Latvia (+371)</option>
+							<option value="266LS">Lesotho (+266)</option>
+							<option value="961LB">Li-băng (+961)</option>
+							<option value="231LR">Liberia (+231)</option>
+							<option value="218LY">Libya (+218)</option>
+							<option value="423LI">Liechtenstein (+423)</option>
+							<option value="370LT">Litva (+370)</option>
+							<option value="352LU">Luxembourg (+352)</option>
+							<option value="212MA">Ma-rốc (+212)</option>
+							<option value="853MO">Macao (+853)</option>
+							<option value="389MK">Bắc Macedonia (+389)</option>
+							<option value="261MG">Madagascar (+261)</option>
+							<option value="265MW">Malawi (+265)</option>
+							<option value="60MY">Malaysia (+60)</option>
+							<option value="960MV">Maldives (+960)</option>
+							<option value="223ML">Mali (+223)</option>
+							<option value="356MT">Malta (+356)</option>
+							<option value="596MQ">Martinique (+596)</option>
+							<option value="222MR">Mauritania (+222)</option>
+							<option value="230MU">Mauritius (+230)</option>
+							<option value="262YT">Mayotte (+262)</option>
+							<option value="52MX">Mexico (+52)</option>
+							<option value="691FM">Micronesia (+691)</option>
+							<option value="373MD">Moldova (+373)</option>
+							<option value="377MC">Monaco (+377)</option>
+							<option value="382ME">Montenegro (+382)</option>
+							<option value="1MS">Montserrat (+1)</option>
+							<option value="258MZ">Mozambique (+258)</option>
+							<option value="976MN">Mông Cổ (+976)</option>
+							<option value="95MM">Myanmar (+95)</option>
+							<option value="47NO">Na Uy (+47)</option>
+							<option value="500GS">Nam Georgia &amp; Quần đảo Nam Sandwich (+500)</option>
+							<option value="27ZA">Nam Phi (+27)</option>
+							<option value="211SS">Nam Sudan (+211)</option>
+							<option value="264NA">Namibia (+264)</option>
+							<option value="674NR">Nauru (+674)</option>
+							<option value="977NP">Nepal (+977)</option>
+							<option value="687NC">New Caledonia (+687)</option>
+							<option value="64NZ">New Zealand (+64)</option>
+							<option value="7RU">Nga (+7)</option>
+							<option value="81JP">Nhật Bản (+81)</option>
+							<option value="505NI">Nicaragua (+505)</option>
+							<option value="227NE">Niger (+227)</option>
+							<option value="234NG">Nigeria (+234)</option>
+							<option value="683NU">Niue (+683)</option>
+							<option value="968OM">Oman (+968)</option>
+							<option value="92PK">Pakistan (+92)</option>
+							<option value="680PW">Palau (+680)</option>
+							<option value="507PA">Panama (+507)</option>
+							<option value="675PG">Papua New Guinea (+675)</option>
+							<option value="595PY">Paraguay (+595)</option>
+							<option value="51PE">Peru (+51)</option>
+							<option value="33FR">Pháp (+33)</option>
+							<option value="358FI">Phần Lan (+358)</option>
+							<option value="63PH">Philippines (+63)</option>
+							<option value="689PF">Polynesia thuộc Pháp (+689)</option>
+							<option value="1PR">Puerto Rico (+1)</option>
+							<option value="974QA">Qatar (+974)</option>
+							<option value="358AX">Quần đảo Åland (+358)</option>
+							<option value="1MP">Quần đảo Bắc Mariana (+1)</option>
+							<option value="1KY">Quần đảo Cayman (+1)</option>
+							<option value="61CC">Quần đảo Cocos (Keeling) (+61)</option>
+							<option value="682CK">Quần đảo Cook (+682)</option>
+							<option value="500FK">Quần đảo Falkland (Malvinas) (+500)</option>
+							<option value="298FO">Quần đảo Faroe (+298)</option>
+							<option value="692MH">Quần đảo Marshall (+692)</option>
+							<option value="64PN">Quần đảo Pitcairn (+64)</option>
+							<option value="677SB">Quần đảo Solomon (+677)</option>
+							<option value="1TC">Quần đảo Turks và Caicos (+1)</option>
+							<option value="1VG">Quần đảo Virgin thuộc Anh (+1)</option>
+							<option value="1VI">Quần đảo Virgin thuộc Mỹ (+1)</option>
+							<option value="262RE">Réunion (+262)</option>
+							<option value="40RO">Romania (+40)</option>
+							<option value="250RW">Rwanda (+250)</option>
+							<option value="508PM">Saint Pierre và Miquelon (+508)</option>
+							<option value="685WS">Samoa (+685)</option>
+							<option value="1AS">Samoa thuộc Mỹ (+1)</option>
+							<option value="378SM">San Marino (+378)</option>
+							<option value="239ST">São Tomé và Príncipe (+239)</option>
+							<option value="420CZ">Séc (+420)</option>
+							<option value="221SN">Senegal (+221)</option>
+							<option value="381RS">Serbia (+381)</option>
+							<option value="248SC">Seychelles (+248)</option>
+							<option value="232SL">Sierra Leone (+232)</option>
+							<option value="65SG">Singapore (+65)</option>
+							<option value="1SX">Sint Maarten (+1)</option>
+							<option value="357CY">Síp (+357)</option>
+							<option value="421SK">Slovakia (+421)</option>
+							<option value="386SI">Slovenia (+386)</option>
+							<option value="252SO">Somalia (+252)</option>
+							<option value="94LK">Sri Lanka (+94)</option>
+							<option value="590BL">St. Barthélemy (+590)</option>
+							<option value="290SH">St. Helena (+290)</option>
+							<option value="1KN">St. Kitts và Nevis (+1)</option>
+							<option value="1LC">St. Lucia (+1)</option>
+							<option value="590MF">St. Martin (+590)</option>
+							<option value="1VC">St. Vincent và Grenadines (+1)</option>
+							<option value="249SD">Sudan (+249)</option>
+							<option value="597SR">Suriname (+597)</option>
+							<option value="47SJ">Svalbard và Jan Mayen (+47)</option>
+							<option value="268SZ">Swaziland (+268)</option>
+							<option value="886TW">Đài Loan (+886)</option>
+							<option value="992TJ">Tajikistan (+992)</option>
+							<option value="255TZ">Tanzania (+255)</option>
+							<option value="34ES">Tây Ban Nha (+34)</option>
+							<option value="212EH">Tây Sahara (+212)</option>
+							<option value="66TH">Thái Lan (+66)</option>
+							<option value="379VA">Thành Vatican (+379)</option>
+							<option value="90TR">Thổ Nhĩ Kỳ (+90)</option>
+							<option value="46SE">Thụy Điển (+46)</option>
+							<option value="41CH">Thụy Sĩ (+41)</option>
+							<option value="670TL">Timor-Leste (+670)</option>
+							<option value="228TG">Togo (+228)</option>
+							<option value="690TK">Tokelau (+690)</option>
+							<option value="676TO">Tonga (+676)</option>
+							<option value="1TT">Trinidad và Tobago (+1)</option>
+							<option value="86CN">Trung Quốc (+86)</option>
+							<option value="216TN">Tunisia (+216)</option>
+							<option value="993TM">Turkmenistan (+993)</option>
+							<option value="688TV">Tuvalu (+688)</option>
+							<option value="256UG">Uganda (+256)</option>
+							<option value="380UA">Ukraina (+380)</option>
+							<option value="598UY">Uruguay (+598)</option>
+							<option value="998UZ">Uzbekistan (+998)</option>
+							<option value="678VU">Vanuatu (+678)</option>
+							<option value="58VE">Venezuela (+58)</option>
+							<option value="84VN">Việt Nam (+84)</option>
+							<option value="44GB">Vương quốc Anh (+44)</option>
+							<option value="681WF">Wallis và Futuna (+681)</option>
+							<option value="967YE">Yemen (+967)</option>
+							<option value="260ZM">Zambia (+260)</option>
+							<option value="263ZW">Zimbabwe (+263)</option>
+						</select>
+					</div>
+					
 				</div>
+
+
 				<p class="auth-form__privacy">
 					Chúng tôi sẽ gọi điện hoặc nhắn tin cho bạn để xác nhận số điện thoại. Có áp dụng phí dữ liệu và
 					phí tin nhắn tiêu chuẩn.
@@ -516,19 +776,74 @@
 
 				<div class="auth-form__social-list">
 					<a href="" class="auth-form__social-item">
-						<i class="ti-facebook auth-form__social-item-icon"></i>
+						<div class="auth-form__social-item-icon">
+							<svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false"
+								style="height: 20px; width: 20px; display: block; fill: currentcolor;">
+								<defs>
+									<path id="a" d="M.001 0H24v23.854H.001z"></path>
+								</defs>
+								<g fill="none" fill-rule="evenodd">
+									<mask id="b" fill="#fff">
+										<use xlink:href="#a"></use>
+									</mask>
+									<path
+										d="M24 12c0-6.627-5.373-12-12-12S0 5.373 0 12c0 5.99 4.388 10.954 10.125 11.854V15.47H7.078V12h3.047V9.356c0-3.007 1.792-4.668 4.533-4.668 1.312 0 2.686.234 2.686.234v2.953H15.83c-1.491 0-1.956.925-1.956 1.874V12h3.328l-.532 3.469h-2.796v8.385C19.612 22.954 24 17.99 24 12"
+										fill="#1877F2" mask="url(#b)"></path>
+									<path
+										d="M16.671 15.469L17.203 12h-3.328V9.749c0-.949.465-1.874 1.956-1.874h1.513V4.922s-1.374-.234-2.686-.234c-2.741 0-4.533 1.66-4.533 4.668V12H7.078v3.469h3.047v8.385a12.09 12.09 0 003.75 0V15.47h2.796"
+										fill="#FFF"></path>
+								</g>
+							</svg>
+						</div>
 						<span class="auth-form__social-item-label">Tiếp tục với Facebook</span>
 					</a>
+
 					<a href="" class="auth-form__social-item">
-						<i class="ti-google auth-form__social-item-icon"></i>
+						<div class="auth-form__social-item-icon">
+							<svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false"
+								style="height: 20px; width: 20px; display: block;">
+								<g fill="none" fill-rule="evenodd">
+									<path
+										d="M9 3.48c1.69 0 2.83.73 3.48 1.34l2.54-2.48C13.46.89 11.43 0 9 0 5.48 0 2.44 2.02.96 4.96l2.91 2.26C4.6 5.05 6.62 3.48 9 3.48z"
+										fill="#EA4335"></path>
+									<path
+										d="M17.64 9.2c0-.74-.06-1.28-.19-1.84H9v3.34h4.96c-.1.83-.64 2.08-1.84 2.92l2.84 2.2c1.7-1.57 2.68-3.88 2.68-6.62z"
+										fill="#4285F4"></path>
+									<path
+										d="M3.88 10.78A5.54 5.54 0 0 1 3.58 9c0-.62.11-1.22.29-1.78L.96 4.96A9.008 9.008 0 0 0 0 9c0 1.45.35 2.82.96 4.04l2.92-2.26z"
+										fill="#FBBC05"></path>
+									<path
+										d="M9 18c2.43 0 4.47-.8 5.96-2.18l-2.84-2.2c-.76.53-1.78.9-3.12.9-2.38 0-4.4-1.57-5.12-3.74L.97 13.04C2.45 15.98 5.48 18 9 18z"
+										fill="#34A853"></path>
+									<path d="M0 0h18v18H0V0z"></path>
+								</g>
+							</svg>
+						</div>
 						<span class="auth-form__social-item-label">Tiếp tục với Google</span>
 					</a>
+
 					<a href="" class="auth-form__social-item">
-						<i class="ti-apple auth-form__social-item-icon"></i>
+						<div class="auth-form__social-item-icon">
+							<svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false"
+								style="height: 20px; width: 20px; display: block; fill: currentcolor;">
+								<path fill="rgb(72, 72, 72)"
+									d="m13.3 2.1a5.1 5.1 0 0 1 3.8-2.1 5.1 5.1 0 0 1 -1.2 3.8 4.1 4.1 0 0 1 -3.6 1.7 4.5 4.5 0 0 1 1-3.4zm-5 3.7c-2.8 0-5.8 2.5-5.8 7.3 0 4.9 3.5 10.9 6.3 10.9 1 0 2.5-1 4-1s2.6.9 4 .9c3.1 0 5.3-6.4 5.3-6.4a5.3 5.3 0 0 1 -3.2-4.9 5.2 5.2 0 0 1 2.6-4.5 5.4 5.4 0 0 0 -4.7-2.4c-2 0-3.5 1.1-4.3 1.1-.9 0-2.4-1-4.2-1z">
+								</path>
+							</svg>
+						</div>
 						<span class="auth-form__social-item-label">Tiếp tục với Apple</span>
 					</a>
+
 					<a href="" class="auth-form__social-item">
-						<i class="ti-email auth-form__social-item-icon"></i>
+						<div class="auth-form__social-item-icon">
+							<svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false"
+								style="height: 20px; width: 20px; display: block; fill: currentcolor;">
+								<path fill="rgb(72, 72, 72)"
+									d="m22.5 4h-21c-.83 0-1.5.67-1.5 1.51v12.99c0 .83.67 1.5 1.5 1.5h20.99a1.5 1.5 0 0 0 1.51-1.51v-12.98c0-.84-.67-1.51-1.5-1.51zm.5 14.2-6.14-7.91 6.14-4.66v12.58zm-.83-13.2-9.69 7.36c-.26.2-.72.2-.98 0l-9.67-7.36h20.35zm-21.17.63 6.14 4.67-6.14 7.88zm.63 13.37 6.3-8.1 2.97 2.26c.62.47 1.57.47 2.19 0l2.97-2.26 6.29 8.1z"
+									fill-rule="evenodd"></path>
+							</svg>
+						</div>
+
 						<span class="auth-form__social-item-label">Tiếp tục với Email</span>
 					</a>
 				</div>

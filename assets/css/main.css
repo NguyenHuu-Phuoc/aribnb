@@ -633,18 +633,27 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom:1px solid #AFAFAF;
+    border-bottom:1px solid rgb(235,235,235);
     padding:12px 24px;
 }
 
 .btn-close-modal{
-    font-size:1.4rem;
-    color:var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    cursor:pointer;
+}
+
+.btn-close-modal:hover{
+    border-radius: 50%;
+    background-color: rgb(247,247,247);
 }
 
 .auth-form__heading-title{
     flex: 1;
-    font-size:1.8rem;
+    font-size:1.6rem;
     color:var(--text-color);
     font-weight:600;
     text-align: center;
@@ -659,14 +668,15 @@
 .auth-form__body-title{
     font-size:2.2rem;
     color:var(--text-color);
-    font-weight:600;
+    font-weight:500;
+    line-height:2.2rem;
 }
 
-.auth-form__group{
+/* .auth-form__group{
     width: 100%;
-}
+} */
 
-.auth-form-select,.auth-form-input{
+/* .auth-form-select,.auth-form-input{
     width: 100%;
     height: 56px;
     font-size: 1.4rem;
@@ -679,6 +689,29 @@
 
 .auth-form__region-list{
     background-color: transparent;
+} */
+
+.auth-form__content-region{
+    display: flex;
+    flex-direction: column;
+    height: 56px;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 8px; 
+}
+
+.auth-form__content-region-title{
+    font-size:1.2rem;
+    color:rgb(113,113,113);
+    padding: 10px 0 0 12px;
+}
+
+.auth-form__content-region-list{
+    /* flex:1; */
+    width: 100%;
+    border:none;
+    background-color: transparent;
+    font-size:1.6rem;
+    font-weight: 400;
 }
 
 .auth-form__privacy{
@@ -716,7 +749,6 @@
     position:absolute;
     width:222px;
     border-bottom:1px solid rgb(228, 228, 228) !important;
-    background-color: #AFAFAF;
     left:0;
     top:50%;
     transform: translateY(-50%);
@@ -727,14 +759,9 @@
     position:absolute;
     width:222px;
     border-bottom:1px solid rgb(228, 228, 228) !important;
-    background-color: #AFAFAF;
     right:0;
     top:50%;
     transform: translateY(-50%);
-}
-
-.auth-form__social-list{
-
 }
 
 .auth-form__social-item{
@@ -748,9 +775,8 @@
     margin-bottom:14px;
 }
 
-.auth-form__social-item-icon{
-    font-size:1.6rem;
-    color:rgb(72, 72, 72);
+.auth-form__social-item:hover{
+    border-color:rgb(34,34,34);
 }
 
 .auth-form__social-item-label{
