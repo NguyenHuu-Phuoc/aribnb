@@ -84,10 +84,10 @@
 
 							<ul class="navbar__list-menu-user">
 								<li class="menu__user-item">
-									<a href="" class="menu__user-item-link">Đăng ký</a>
+									<a href="" class="js_show_modal menu__user-item-link">Đăng ký</a>
 								</li>
 								<li class="menu__user-item">
-									<a href="" class="menu__user-item-link">Đăng nhập</a>
+									<a href="" class="js_show_modal menu__user-item-link">Đăng nhập</a>
 								</li>
 								<span class="menu__user-item--cross"></span>
 								<li class="menu__user-item">
@@ -483,11 +483,11 @@
 
 
 	<!-- Modal layout -->
-	<div class="modal">
+	<div class="js-modal modal">
 		<div class="modal__overlay"></div>
-		<div class="modal__body">
+		<div class="modal__body js-modal-container">
 			<div class="auth-form__heading">
-				<buton class="btn-close-modal">
+				<buton id="js_btn-close-modal" class="btn-close-modal">
 					<svg viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false"
 						style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
 						<path d="m6 6 20 20"></path>
@@ -500,21 +500,10 @@
 			<div class="auth-form__body">
 				<h3 class="auth-form__body-title">Chào mừng bạn đến với Aribnb</h3>
 
-				<!-- <div class="auth-form__group">
-					<select class="auth-form__region-list auth-form-select">
-						<option class="auth-form__region-item">Việt Nam (+84)</option>
-						<option class="auth-form__region-item">Thụy Sĩ (+41)</option>
-						<option class="auth-form__region-item">Thụy Điển (+46)</option>
-					</select>
-				</div>
-				<div class="auth-form__group">
-					<input type="text" class="auth-form-input auth-form__telephone" placeholder="Số điện thoại">
-				</div> -->
-
-				<div class="auth-form__body-content">
-					<div class="auth-form__content-region">
-						<label for="region_list" class="auth-form__content-region-title">Quốc gia/ Khu vực</label>
-						<select name="region_list" id="" class="auth-form__content-region-list">
+				<div class="auth-form__content">
+					<div class="auth-form__region">
+						<label for="region_list" class="auth-form__region-title">Quốc gia/ Khu vực</label>
+						<select name="region_list" id="" class="auth-form__region-list">
 							<option value="966SA">Ả Rập Xê-út (+966)</option>
 							<option value="93AF">Afghanistan (+93)</option>
 							<option value="20EG">Ai Cập (+20)</option>
@@ -759,7 +748,17 @@
 							<option value="263ZW">Zimbabwe (+263)</option>
 						</select>
 					</div>
-					
+
+					<div id="js_auth-form_tetlephone" class="auth-form__telephone">
+						<span class="auth-form__telephone-title">Số điện thoại</span>
+						<div class="auth-form__telephone-wrap">
+							<div class="auth-form__telephone-content">
+								<span class="auth-form__telephone-head">+84</span>
+								<input type="text" name="" id="" class="auth-form__telephone-input">
+							</div>
+						</div>
+					</div>
+
 				</div>
 
 
@@ -854,17 +853,52 @@
 	</div>
 </body>
 
-<!-- <script type="text/javascript">
-	document.getElementById('js_click_menu_user').addEventListener('click', function (e) {
-		e.preventDefault();
-		var menuUser = document.getElementById('list_menu_user');
-		var displayMenuUser = menuUser.style.display;
-		if (displayMenuUser == 'block') {
-			menuUser.style.display = 'none';
-		} else {
-			menuUser.style.display = 'block';
-		}
+<script type="text/javascript">
+	// document.getElementById('js_click_menu_user').addEventListener('click', function (e) {
+	// 	e.preventDefault();
+	// 	var menuUser = document.getElementById('list_menu_user');
+	// 	var displayMenuUser = menuUser.style.display;
+	// 	if (displayMenuUser == 'block') {
+	// 		menuUser.style.display = 'none';
+	// 	} else {
+	// 		menuUser.style.display = 'block';
+	// 	}
+	// })
+
+	const modal = document.querySelector('.js-modal');
+	const modalContainer = document.querySelector('.js-modal-container');
+	const showBtns = document.querySelectorAll('.js_show_modal');
+
+	function showModal() {
+		modal.classList.add('modal--open');
+	}
+
+	function closeModal() {
+		modal.classList.remove('modal--open');
+	}
+
+	// Lắng nghe hành vi click vào nút đăng nhập và đăng ký
+	for (const showBtn of showBtns) {
+		showBtn.addEventListener('click', function (e) {
+			e.preventDefault();
+			showModal();
+		})
+	}
+
+	// Lắng nghe hành vi click vào nút close modal
+	document.getElementById('js_btn-close-modal').addEventListener('click', closeModal);
+
+	modal.addEventListener('click',closeModal);
+
+	modalContainer.addEventListener('click',function(e){
+		e.stopPropagation();
 	})
-</script> -->
+
+	// Lắng nghe hành vi click vào ô nhập số điện thoại
+	document.getElementById('js_auth-form_tetlephone').addEventListener('click', function (e) {
+		this.classList.add('auth-form__telephone--active');
+	})
+
+</script>
 
 </html>
