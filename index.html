@@ -750,7 +750,7 @@
 						</select>
 					</div>
 
-					<div id="js_auth-form_tetlephone" class="auth-form__telephone">
+					<div class="auth-form__telephone js_auth-form_tetlephone">
 						<span class="auth-form__telephone-title">Số điện thoại</span>
 						<div class="auth-form__telephone-wrap">
 							<div class="auth-form__telephone-content">
@@ -873,6 +873,7 @@
 	const modal = document.querySelector('.js-modal');
 	const modalContainer = document.querySelector('.js-modal-container');
 	const showBtns = document.querySelectorAll('.js_show_modal');
+	const formTelephone = document.querySelector('.js_auth-form_tetlephone');
 
 	function showModal() {
 		modal.classList.add('modal--open');
@@ -880,6 +881,14 @@
 
 	function closeModal() {
 		modal.classList.remove('modal--open');
+	}
+
+	function activeFormTelephone() {
+		formTelephone.classList.add('auth-form__telephone--active');
+	}
+
+	function inactiveFormTelephone() {
+		formTelephone.classList.remove('auth-form__telephone--active');
 	}
 
 	// Lắng nghe hành vi click vào nút đăng nhập và đăng ký
@@ -891,17 +900,23 @@
 	}
 
 	// Lắng nghe hành vi click vào nút close modal
-	document.getElementById('js_btn-close-modal').addEventListener('click', closeModal);
+	document.getElementById('js_btn-close-modal').addEventListener('click', function () {
+		closeModal();
+		inactiveFormTelephone();
+	});
 
-	modal.addEventListener('click', closeModal);
+	modal.addEventListener('click', function () {
+		closeModal();
+		inactiveFormTelephone();
+	});
+
+	// Lắng nghe hành vi click vào ô nhập số điện thoại
+	formTelephone.addEventListener('click', function () {
+		activeFormTelephone();
+	})
 
 	modalContainer.addEventListener('click', function (e) {
 		e.stopPropagation();
-	})
-
-	// Lắng nghe hành vi click vào ô nhập số điện thoại
-	document.getElementById('js_auth-form_tetlephone').addEventListener('click', function (e) {
-		this.classList.add('auth-form__telephone--active');
 	})
 </script>
 
